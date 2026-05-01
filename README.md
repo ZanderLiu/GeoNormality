@@ -17,7 +17,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## 👨‍💻 Author
 
-**Zhengdao Liu and Chenghao Shen**
+**Liu Zhengdao and Shen Chenghao **
 
 ---
 
@@ -35,7 +35,7 @@ For questions or collaborations, please open an issue or contact me.
 
 Best wishes!
 
-Zhengdao Liu
+Liu Zhengdao
 
 📮: karatelife_liu@outlook.com 
 
