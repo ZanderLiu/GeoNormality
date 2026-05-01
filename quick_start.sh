@@ -1,5 +1,5 @@
 #!/bin/bash
-# 
+# Written By Liu Zhengdao, 2026-4-30
 # useage:
 #   chmod +x quick_start.sh
 #   ./quick_start.sh
