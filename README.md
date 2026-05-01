@@ -1,7 +1,8 @@
 # GeoNormality: 3D Geometric Consistency Distillation for Robust Image Forgery Detection
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
+
 
 **GeoNormality** is a robust image forgery detection framework that...
 
