@@ -3,8 +3,9 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Deep-DS** is a robust image forgery detection framework that leverages **depth information** from monocular depth estimation to enhance detection performance. The framework combines **Swin Transformer** backbone with multi-modal fusion strategies and knowledge distillation from Depth Anything V3.
+**GeoNormality** is a robust image forgery detection framework that leverages **depth information** from monocular depth estimation to enhance detection performance. The framework combines **Swin Transformer** backbone with multi-modal fusion strategies and knowledge distillation from Depth Anything V3.
 
+**When this paper have already been published, we will upload the other code files immediately.**
 ---
 
 ## 🪐 Key Features
@@ -23,10 +24,6 @@
 | Configuration | F1 Score | IoU | AUC | Training Time |
 |--------------|----------|-----|-----|---------------|
 | Baseline (No Depth) | ~0.65 | ~0.48 | ~0.82 | - |
-| Scheme 1 (Early Fusion) | ~0.72 | ~0.55 | ~0.85 | ~5 min/epoch |
-| **Scheme 2 (Skip Connect)** ⭐ | **~0.75** | **~0.60** | **~0.88** | **~5 min/epoch** |
-| Scheme 2 + Edge Distill | ~0.77 | ~0.63 | ~0.90 | ~5 min/epoch |
-| Scheme 2 + Contrastive | ~0.78 | ~0.65 | ~0.91 | ~6 min/epoch |
 
 *Results may vary depending on dataset and training settings.*
 
@@ -37,33 +34,7 @@
 ### Multi-Level Depth Fusion
 
 ```
-┌─────────────────────────────────────────────────┐
-│           Input-Level Enhancement               │
-│  RGB_Enhanced = RGB + Depth_Enhancement         │
-└────────────────┬────────────────────────────────┘
-                 │
-┌────────────────▼────────────────────────────────┐
-│         Feature-Level Fusion (Scheme 2)          │
-│  ┌──────────┐    ┌──────────┐                   │
-│  │RGB Branch│    │Noise     │                   │
-│  │(Swin)    │    │Branch    │                   │
-│  └────┬─────┘    └────┬─────┘                   │
-│       │               │                          │
-│       └─── PAA ───────┘                          │
-│            │                                     │
-│  Decoder with Depth Skip Connections:            │
-│  Level 1: H/2  →  Inject depth features          │
-│  Level 2: H/4  →  Inject depth features          │
-│  Level 3: H/8  →  Inject depth features          │
-│  Level 4: H/16 →  Inject depth features          │
-└────────────────┬────────────────────────────────┘
-                 │
-┌────────────────▼────────────────────────────────┐
-│        Output-Level Supervision                  │
-│  • Depth Map Distillation (L1 + MSE)            │
-│  • Edge Map Distillation (BCE + Dice)           │
-│  • Contrastive Distillation (Optional)          │
-└─────────────────────────────────────────────────┘
+Coming Soon!
 ```
 
 ### Two Fusion Schemes
@@ -425,8 +396,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 ---
 
 ## 👨‍💻 Author
